@@ -64,3 +64,16 @@ casting types
 	explicit - type it explicitly, tell the compiler what type you want to set it to
 		from the example above, you can switch it to:
 		a = (int)b, that way if b was something other than 3.0 such as 3.2, we tell the compiler to round and make it work so it would become 3
+
+	something else to consider for casting, is converting char to a number or vice versa
+	in the back-end, a char doesn't store 'a', it stores the value representing it: 97 for lowecase and 65 for uppercase
+	int targetInt;
+	char sourceChar = 'a';
+	targetInt =  (int)sourceChar;
+	now, targetInt equals 97
+	when you cast an int to a char, you get the opposite process and the char is set to the value at the int value
+	so if you did:
+	int sourceInt = 65;
+	char targetChar;
+	targetChar = (char)sourceInt;
+	targetChar would now equal 'A'
