@@ -1,0 +1,17 @@
+main data types are:
+	int - a whole number, -2,147,483,648 to 2,147,483,647
+	float - a number with possible decimals, 6 decimal places
+	double - a number with possible decimals (more precise), 15 decimal places
+	char - stores one character (letter or number), a single character
+
+declaring and initializing data types
+	type variable_name
+	make more than one of the same type with
+	type var1, var2, var3, var4
+
+variable names
+	c doesnt allow just anything to be a variable name
+	names can be composed of upper and lowercase letters, numbers, and underscores
+	first character must be a letter (upper or lower)
+	no keywords are allowed as the full name (think int or float, int_count would be fine)
+

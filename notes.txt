@@ -23,6 +23,7 @@ escape sequences
 	put inside the string to add a non-visual character within the string
 	\n - newline escape sequence
 	\t - tab escape sequence
+	\r - carriage return
 
 //single line comment - can put at the end of a line
 
@@ -42,3 +43,11 @@ compiling
 	to run the executable file after compilation, use the ./helloWorld command
 
 printf(); prints to the console
+	printf("string to display\n", [list of optional parameters]);
+	int day = 3
+	printf("Hello World, today is the %drd!", day);
+	the compiler takes the '%d' and replaces it with the parameter we passed the function, taking them in the order found and matching the order they are listed in
+	some basic formatting and paramter types:
+		%d or %i - int
+		%f - double or float
+		%c - char
