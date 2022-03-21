@@ -3,6 +3,11 @@ main data types are:
 	float - a number with possible decimals, 6 decimal places
 	double - a number with possible decimals (more precise), 15 decimal places
 	char - stores one character (letter or number), a single character
+	const - constant, prevent changes during execution
+	
+two times when you can set a variable's value
+	set at declaration
+	set at any future point in code
 
 declaring and initializing data types
 	type variable_name
@@ -15,3 +20,47 @@ variable names
 	first character must be a letter (upper or lower)
 	no keywords are allowed as the full name (think int or float, int_count would be fine)
 
+when declaring a char you need SINGLE quotes
+	char foo = 'a';
+	char bar = '2';
+
+difference between float and double
+	float has less precision than a double, 6 decimal points vs 15
+	float takes less memory - 4 vs 8 bytes
+	double runs faster, gain speed at the cost of memory usage
+	the system will round the values stored in EITHER, can cause unexpected results with a float especially because they have less precision
+	double is used any time accuracy is important - scientific, medical, financial situations
+
+resetting variables
+	int total_units;
+	..
+	..
+	..
+	total_units = 3;
+	once youve declared a type you no longer need to reference the type, just the variable name
+	can also set a variable to the same as what is stored in another variable; a = b;
+		note: changing b afterwards will not also change a, touch on this later
+
+constants
+	any basic data type can also be a constant
+	instead of the template: type name
+	it becomes: const type name
+	best practice has constants have all uppercase names
+	const int DAYSINAWEEK = 7;
+	cant be changed later in the code
+
+casting types
+	sometimes you need to change the value type of a variable and use it for other purposes
+	NOTE: this is NOT changing the type of the variable, NOR the value stored in the source material
+		this IS displaying the changed variable as a new type or storing it in a different variable that might be a different type
+	CANNOT DO THIS:
+		int a;
+		double b = 3.0;
+		a = b;
+
+	two types of conversions, implicit and explicit
+	implicit - when you set one variable to be the same as another, like a=b, but their types dont match, the compiler will try to convert - this is dangerous as you might not know
+		what value is in the variable at runtime
+	explicit - type it explicitly, tell the compiler what type you want to set it to
+		from the example above, you can switch it to:
+		a = (int)b, that way if b was something other than 3.0 such as 3.2, we tell the compiler to round and make it work so it would become 3
