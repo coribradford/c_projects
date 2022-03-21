@@ -1,0 +1,44 @@
+case sensitivity
+	most words use lowercase, code is case-sensitive
+
+semicolon
+	all statements need to end with a semicolon, signifies the end of a statement
+
+double quotes
+	text between double quotes (") is a string, all strings must be surrounded by double quotes
+
+errors
+	look like:
+
+	script.c: In function ‘main’:
+	script.c:6:1: error: expected ‘;’ before ‘}’ token
+ 	}
+
+	gives info: 
+		in function 'main'
+		line and column number 6:1
+		description 'expected ';' before '}'
+
+escape sequences
+	put inside the string to add a non-visual character within the string
+	\n - newline escape sequence
+	\t - tab escape sequence
+
+//single line comment - can put at the end of a line
+
+/*
+multi line comments
+*/
+
+compiling
+	compiler is the program that converts the code into an executable program that can be run by the computer
+	widely used is the gcc compiler - GNU compiler collection
+	ex:
+		gcc helloWorld.c -o helloWorld
+		gcc is running the compiler application
+		helloWorld.c is the filename of the code to be compiled
+		-o helloWorld is an optional addition that specifies the name of the output file
+			if left off, the output would be called a.out by default
+	to run the executable file after compilation, use the ./helloWorld command
+
+printf(); prints to the console
