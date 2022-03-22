@@ -7,6 +7,7 @@ if, else if, and else statements
 		} else {
 				final code possible to execute
 		}
+		An else statement can be left “dangling” if it’s unclear which conditional the statement is actually connected to.
 switch statements
 	switch statement must evaluate to an integer (int, char, short, long, long long, or enum)
 	include the break because if not, the matching case would evaluate and then all following cases
@@ -28,6 +29,11 @@ switch statements
 					printf("Invalid\n");
 					break;
 		}
+logical operators can be used to test multiple conditions at once
+	if this is true or that is true
+	if this is true and that is true
+	etc
+relational operators compare values and evaluate to either true or false
 Ternary operators
 	condition ? do something : do something else;
 	shorthand for if/else statements
