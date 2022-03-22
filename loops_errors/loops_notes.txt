@@ -1,0 +1,27 @@
+while
+    while (condition) {
+        // Statement(s)
+    }
+    executes while some condition is true
+do-while
+    do {
+        // Statement(s)
+    } while (condition);
+    condition doesnt get checked until after the statement runs, always runs at least once first
+for
+    for (int i = 0; i < 10; i++) {
+        printf("%d\n", i);
+    }
+    The initialization of a counter: int i = 0
+    The condition: i < 10
+    The change in the counter (in this case an increment): i++
+break breaks out of a loop and stops it running again
+    best used in a controlled infinite loop, ie. while (true) until quit is input or smth
+continue
+    if a continue is ever reached, it will immediately skip the rest of the statements inside the loop body and “continue” into the next iteration.
+    for (int i = 0; i < 10; i++) {
+        if (i % 2 == 0) {
+            continue;
+        }
+        printf("%d is odd\n", i);
+    }

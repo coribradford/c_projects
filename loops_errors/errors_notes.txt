@@ -1,0 +1,12 @@
+Compile-time errors: Errors found by the compiler:
+    Syntax errors - invalid statement is written
+    Semantic errors - syntactically valid but don’t do what the programmer intends.
+Link-time errors: Errors found by the linker when it is trying to combine object files into an executable program.
+    If your program has no compile-time errors, these link-time errors will occur when an attempt is made to actually compile. These appear when 
+    a program is missing proper prototypes, has incorrect header files, or accidentally uses Main() instead of main().
+Run-time errors: Errors found by checks in a running program.
+    If your program has no compile-time errors and no link-time errors, it’ll run. Run-time errors appear during this time and can manifest in a 
+    handful of unique ways, one most common way being a Division error when dividing by zero. These types of errors can be difficult to find due 
+    to them being syntactically right and missed by the compiler.
+Logic errors: Errors found by the programmer looking for the causes of erroneous results.
+    it all runs properly, but the underlying logic is flawed and doesn't produce the expected results
