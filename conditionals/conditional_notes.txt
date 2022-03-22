@@ -29,6 +29,14 @@ switch statements
 					printf("Invalid\n");
 					break;
 		}
+		can also combine multiple cases like so:
+			switch (fives) {
+				case 5: case 10: case 15:
+					printf("Contains 1-3 fives.");
+					break;
+				default:
+					print("Contains 0 or more than 3 fives.");
+			}
 logical operators can be used to test multiple conditions at once
 	if this is true or that is true
 	if this is true and that is true
