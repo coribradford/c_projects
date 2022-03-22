@@ -1,0 +1,31 @@
+can use + - * / as normal
+
+can set variables to the result of an operation performed on other variables
+
+modulo returns the remainder from division - commonly used to determine if a value is odd or even
+
+incrementing and decrementing have specific operators too, i++ or i--
+
+shorthand also works in c
+	+= -= *= /= %=
+comparisons occur as you imagine also:
+	==, >, <, >=, <=, !=, && and, || or, ! not
+
+priority operation
+1	++
+1	--
+1	()
+2	!
+2	(typecast)
+3	*
+3	/
+3	%
+4	+
+4	-
+5	<, <=
+5	>, >=
+6	==, !=
+7	&&
+8	||
+9	all assignment operators
+operations perform in order of operation and then left to right
