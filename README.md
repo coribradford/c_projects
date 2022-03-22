@@ -1,1 +1,1 @@
-c fundamentals and learning projects
+# C notes and fundamental projects
