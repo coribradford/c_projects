@@ -1,0 +1,34 @@
+if, else if, and else statements
+	format is:
+		if (conditional statement) {
+				code to execute;
+		} else if (condition) {
+				other code to execute
+		} else {
+				final code possible to execute
+		}
+switch statements
+	switch statement must evaluate to an integer (int, char, short, long, long long, or enum)
+	include the break because if not, the matching case would evaluate and then all following cases
+	ex: 
+		switch (grade) {
+			case 9:
+					printf("Freshman\n");
+					break;
+			case 10:
+					printf("Sophomore\n");
+					break;
+			case 11:
+					printf("Junior\n");
+					break;
+			case 12:
+					printf("Senior\n");
+					break;
+			default:
+					printf("Invalid\n");
+					break;
+		}
+Ternary operators
+	condition ? do something : do something else;
+	shorthand for if/else statements
+	can set variables equal to the result of a ternary operator
